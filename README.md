@@ -5,3 +5,8 @@ Learn how to take advantage of Angular Material to create beautiful and modern A
 ---
 
 [Read more](https://auth0.com/blog/creating-beautiful-apps-with-angular-material/)
+
+## TODO
+- Add posts to main page.
+- Hide "Dashboard"  button to not autenticated users.
+- Use Angular to internationalize.
