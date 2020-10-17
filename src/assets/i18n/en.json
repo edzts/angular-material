@@ -1,0 +1,31 @@
+{
+	"app": {
+		"login": "Login",
+		"home": "Home",
+		"dashboard": "Dashboard",
+		"logout": "Log Out",
+		"material-blog": "Material Blog"
+	},
+	"dashboard": {
+		"add-post": "Add Post",
+		"login-to-add-post": "Login to Add Post",
+		"recent-posts": "Recent Posts ",
+		"date-posted": "Date Posted",
+		"title": "Title",
+		"category": "Category"
+	},
+    "languages": {
+        "en": "English",
+        "es": "Español"
+    },
+	"post-dialog": {
+		"post-title ": "Post Title ",
+		"post-body": "Post Body",
+		"post-cetegory": "Post Category"
+	},
+	"welcome": {
+		"title": "Angular Content Management System",
+		"text-1": "This is a platform for technical writers to manage their blog post contents related to angular.",
+		"text-2": "Click on Login to get Started!!!"
+    }
+}

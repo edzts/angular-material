@@ -1,0 +1,31 @@
+{
+	"app": {
+		"login": "Iniciar sesión",
+		"home": "Home",
+		"dashboard": "Tablero",
+		"logout": "Cerrar sesión",
+		"material-blog": "Blog material"
+	},
+	"dashboard": {
+		"add-post": "Añadir publicación",
+		"login-to-add-post": "Inicia sesión para añadir publicaciones",
+		"recent-posts": "Publicaciones recientes",
+		"date-posted": "Fecha de publicación",
+		"title": "Título",
+		"category": "Categoría"
+    },
+    "languages": {
+        "en": "English",
+        "es": "Español"
+    },
+	"post-dialog": {
+		"post-title ": "Título",
+		"post-body": "Cuerpo",
+		"post-cetegory": "Categoría"
+	},
+	"welcome": {
+		"title": "Sistema de gestión de contenido Angular",
+		"text-1": "Esta es una plataforma para que los escritores técnicos administren los contenidos de sus publicaciones de blog relacionados con angular.",
+		"text-2": "¡¡¡Haz clic en \"Iniciar sesión\" para comenzar!!!"
+	}
+}
