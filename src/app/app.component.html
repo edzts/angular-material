@@ -5,26 +5,31 @@
          *ngIf="!auth.isAuthenticated()"
          (click)="auth.login()">
         <mat-icon class="icon">input</mat-icon>
-        <span class="label">Login</span>
+        <span class="label">{{'app.login' | translate}}</span>
       </a>
       <a mat-list-item
          *ngIf="auth.isAuthenticated()"
          routerLink="/">
         <mat-icon class="icon">home</mat-icon>
-        <span class="label">Home</span>
+        <span class="label">{{'app.home' | translate}}</span>
       </a>
       <a mat-list-item
         *ngIf="dashboardVisible"
          routerLink="/dashboard">
         <mat-icon class="icon">dashboard</mat-icon>
-        <span class="label">Dashboard</span>
+        <span class="label">{{'app.dashboard' | translate}}</span>
       </a>
       <a  mat-list-item
           *ngIf="auth.isAuthenticated()"
           (click)="auth.logout()" type="button">
         <mat-icon class="icon">input</mat-icon>
-        <span class="label">LogOut</span>
+        <span class="label">{{'app.logout' | translate}}</span>
       </a>
+      <mat-form-field>
+        <mat-select>
+          <mat-option *ngFor="let language of languages" [value]="language.value">{{language.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -36,7 +41,7 @@
       </div>
       <div>
         <a routerLink="/">
-          Material Blog
+          {{'app.material-blog' | translate}}
         </a>
       </div>
       <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
@@ -46,7 +51,7 @@
               *ngIf="!auth.isAuthenticated()"
               (click)="auth.login()">
               <mat-icon class="icon">input</mat-icon>
-              <span  class="label">Login</span>
+              <span  class="label">{{'app.login' | translate}}</span>
             </a>
           </li>
           <li>
@@ -54,7 +59,7 @@
               *ngIf="auth.isAuthenticated()"
               routerLink="/">
               <mat-icon class="icon">home</mat-icon>
-              <span class="label">Home</span>
+              <span class="label">{{'app.home' | translate}}</span>
             </a>
           </li>
           <li>
@@ -62,7 +67,7 @@
             *ngIf="dashboardVisible"
               routerLink="/dashboard">
               <mat-icon class="icon">dashboard</mat-icon>
-              <span class="label">Dashboard</span>
+              <span class="label">{{'app.dashboard' | translate}}</span>
             </a>
           </li>
           <li>
@@ -71,8 +76,15 @@
               (click)="auth.logout()" type="button"
             >
               <mat-icon class="icon">input</mat-icon>
-              <span class="label">LogOut</span>
+              <span class="label">{{'app.logout' | translate}}</span>
             </a>
+          </li>
+          <li>
+            <mat-form-field>
+              <mat-select [value]="selectedLanguage" (selectionChange)="onChangeLanguage($event)">
+                <mat-option *ngFor="let language of languages" [value]="language.value">{{language.label | translate}}</mat-option>
+              </mat-select>
+            </mat-form-field>
           </li>
         </ul>
       </div>
