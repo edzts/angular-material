@@ -10,3 +10,13 @@ Learn how to take advantage of Angular Material to create beautiful and modern A
 - Add posts to main page.
 - Hide "Dashboard"  button to not autenticated users.
 - Use Angular to internationalize.
+
+
+## Suggestions - Improvements
+- Use of scss instead of css in order to reuse mixins.
+- Use of ":host" in components stylesheets.
+- Modularizing pages, including each page in its module.
+- Completing unit tests.
+- Creating a shared module in order to includes shared components and providers. It could import and export the MaterialModule.
+- Updating Angular to latest version.
+- Using an array to share "mat-sidenav" and "mat-toolbar" links lists.
