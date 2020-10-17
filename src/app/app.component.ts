@@ -10,4 +10,8 @@ export class AppComponent {
   constructor(public auth: AuthService) {
     auth.handleAuthentication();
   }
+
+  public get dashboardVisible(): boolean {
+    return this.auth.isAuthenticated();
+  }
 }

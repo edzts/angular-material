@@ -12,6 +12,7 @@ import {DataService} from './data/data.service';
 import {AuthService} from './auth.service';
 import {PostDialogComponent} from './post-dialog/post-dialog.component';
 import {FormsModule} from '@angular/forms';
+import { DashboardGuard } from './dashboard/dashboard.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,11 @@ import {FormsModule} from '@angular/forms';
     AppRouters,
     FormsModule,
   ],
-  providers: [DataService, AuthService],
+  providers: [
+    DataService,
+    AuthService,
+    DashboardGuard
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     PostDialogComponent
